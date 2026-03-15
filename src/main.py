@@ -1,5 +1,3 @@
-"""Text-to-SQL AI Assistant - Основной файл приложения."""
-
 import sys
 import logging
 import argparse
@@ -83,7 +81,7 @@ class TextToSQLAssistant:
     def run_interactive(self) -> None:
         """Запускает интерактивный режим работы."""
         print("\n" + "=" * 60)
-        print("🤖 Text-to-SQL AI Assistant")
+        print("🤖 HomoSQL Agent")
         print("=" * 60)
         print(f"База данных: {self.config.database.db_type}")
         print(f"Модель: {self.config.llm.model}")
@@ -146,7 +144,7 @@ class TextToSQLAssistant:
 def main():
     """Точка входа в приложение."""
     # Парсинг аргументов командной строки
-    parser = argparse.ArgumentParser(description='Text-to-SQL AI Assistant')
+    parser = argparse.ArgumentParser(description='HomoSQL Agent')
     parser.add_argument('question', nargs='?', help='Вопрос на естественном языке')
     parser.add_argument('--verbose', '-v', action='store_true', help='Показывать все сообщения')
     parser.add_argument('--tools', '-t', action='store_true', help='Показывать сообщения инструментов')

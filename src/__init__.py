@@ -1,3 +1,3 @@
-"""Text-to-SQL AI Assistant."""
+"""HomoSQL Agent."""
 
 __version__ = "0.1.0"

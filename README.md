@@ -1,4 +1,4 @@
-# Text-to-SQL AI Assistant
+# HomoSQL Agent
 
 ## Описание проекта
 

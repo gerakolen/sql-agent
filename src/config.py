@@ -1,5 +1,3 @@
-"""Text-to-SQL AI Assistant - Модуль конфигурации."""
-
 import os
 import sys
 from pathlib import Path

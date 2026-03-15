@@ -1,1 +1,1 @@
-"""Тесты для Text-to-SQL AI Assistant."""
+"""Тесты для HomoSQL Agent."""
