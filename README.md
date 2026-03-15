@@ -59,23 +59,21 @@ sipi-project/
 ├── .env.example
 ├── src/
 │   ├── __init__.py
-│   ├── main.py              # Точка входа
-│   ├── config.py            # Конфигурация
+│   ├── main.py                 # Точка входа
+│   ├── config.py               # Конфигурация
 │   ├── database/
 │   │   ├── __init__.py
-│   │   ├── connection.py    # Подключение к БД
-│   │   └── schema.py        # Чтение схемы БД
+│   │   ├── connection.py       # Подключение к БД
+│   │   └── schema.py           # Чтение схемы БД
 │   ├── agents/
 │   │   ├── __init__.py
-│   │   ├── sql_generator.py # Генерация SQL
-│   │   └── query_executor.py # Выполнение запросов
+│   │   ├── sql_generator.py    # Генерация SQL
+│   │   └── query_executor.py   # Выполнение запросов
 │   └── utils/
 │       ├── __init__.py
-│       └── formatters.py    # Форматирование результатов
+│       └── formatters.py       # Форматирование результатов
 ├── tests/
-│   └── ...
-└── examples/
-    └── sample_database.sql  # Пример схемы БД
+│   └── ...                     # Тесты
 ```
 
 ## Требования к окружению
@@ -87,24 +85,24 @@ sipi-project/
 ## Быстрый старт
 
 ```bash
-# Клонирование репозитория
-git clone <repository-url>
+# 1. Клонирование репозитория
+git clone https://github.com/gerakolen/sql-agent.git
 cd sipi-project
 
-# Создание виртуального окружения
+# 2. Создание виртуального окружения
 python -m venv .venv
 source .venv/bin/activate  # Linux/Mac
 # или
 .venv\Scripts\activate     # Windows
 
-# Установка зависимостей
+# 3. Установка зависимостей
 pip install -r requirements.txt
 
-# Настройка переменных окружения
+# 4. Настройка переменных окружения
 cp .env.example .env
 # Отредактируйте .env с вашими настройками
 
-# Запуск
+# 5. Запуск
 python src/main.py
 ```
 
@@ -126,11 +124,3 @@ System: SELECT region, SUM(amount) as total_sales FROM sales GROUP BY region;
 - [ ] Поддержка более сложных SQL-конструкций (подзапросы, CTE)
 - [ ] Интеграция с популярными BI-инструментами
 - [ ] Мультиязычная поддержка
-
-## Лицензия
-
-MIT License
-
-## Контакты
-
-Для вопросов и предложений: [contact@example.com]
