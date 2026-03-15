@@ -109,11 +109,15 @@ python src/main.py
 ## Примеры использования
 
 ```
-User: Покажи все заказы за последний месяц
-System: SELECT * FROM orders WHERE order_date >= DATE('now', '-1 month');
+❓ Ваш вопрос: Общая стоимость товаров категории электроника
 
-User: Какова общая сумма продаж по регионам?
-System: SELECT region, SUM(amount) as total_sales FROM sales GROUP BY region;
+🔄 Обработка запроса...
+================================== Ai Message ==================================
+
+Available tables: customers, order_items, orders, products
+================================== Ai Message ==================================
+
+Общая стоимость товаров категории "Электроника" составляет 98 996 рублей.
 ```
 
 ## Планы развития
